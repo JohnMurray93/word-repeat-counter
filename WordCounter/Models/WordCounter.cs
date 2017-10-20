@@ -52,5 +52,21 @@ namespace WordCounter.Models
       string[] wordsArray = _sentence.Split(' ');
       return wordsArray;
     }
+    public int CountRepeats()
+    {
+      int counter = 0;
+      // string sentence = _sentence.ToLower();
+      // char[] delimiterChars = {' ', ', ', '. ', ': ', '; ', '/t'};
+      string[] wordsArray = _sentence.Split(' ');
+      foreach (var word in wordsArray)
+      {
+        if(word == _wordinput)
+        {
+          counter++;
+        }
+      }
+      return counter;
+    }
+
   }
 }

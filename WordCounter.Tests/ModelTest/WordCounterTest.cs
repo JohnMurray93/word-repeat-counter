@@ -52,7 +52,16 @@ namespace WordCounter.TestTools
       string newSentence = userInput.RemovePunctuation();
       //Assert
       Console.WriteLine(newSentence);
-
+    }
+    [TestMethod]
+    public void CountRepeats_StringOfWords_ReturnRepeatedCount()
+    {
+      //Arrange
+      RepeatCounter userInput = new RepeatCounter("the", "The cat, Meow jumps over the wall");
+      //Act
+      int numberOfRepeats = userInput.CountRepeats();
+      //Assert
+      Console.WriteLine(numberOfRepeats);
     }
   }
 }
