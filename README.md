@@ -2,10 +2,13 @@
   <content><![CDATA[
 # ${1:Word Counter}
 Program Counts the number of times a word appears in a string
+
 ## Installation
 Open Application using a html browser
+
 ## Usage
 Anybody can use it, use a keyboard for input and click the button to submit
+
 ## Specs
 1.
 Input 1: "the",
