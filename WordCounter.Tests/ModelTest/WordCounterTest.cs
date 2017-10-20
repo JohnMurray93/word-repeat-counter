@@ -28,7 +28,31 @@ namespace WordCounter.TestTools
       bool isSameWord = wordMatch.IsSameWord();
       //Assert
       Console.WriteLine("Words match: "+ isSameWord);
-      Assert.AreEqual(true,isSameWord);
+      Assert.AreEqual(true, isSameWord);
+    }
+    [TestMethod]
+    public void GetWordsArray_StringOfWords_SplitStringIntoWords()
+    {
+      //Arrange
+      RepeatCounter userInput = new RepeatCounter("the", "The cat jumps over the wall");
+      //Act
+      string[] wordsArray = userInput.GetWordsArray();
+      //Assert
+      foreach (var word in wordsArray)
+      {
+        Console.WriteLine(word);
+      }
+    }
+    [TestMethod]
+    public void RemovePunctuation_StringOfWords_RemovedPunctiation()
+    {
+      //Arrange
+      RepeatCounter userInput = new RepeatCounter("the", "The cat, Meow jumps over the wall");
+      //Act
+      string newSentence = userInput.RemovePunctuation();
+      //Assert
+      Console.WriteLine(newSentence);
+
     }
   }
 }

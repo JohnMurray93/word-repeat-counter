@@ -30,6 +30,12 @@ Remarks: Method 2 will split strings into individual words and removes any punct
 
 4.
 Input 1: "the"
+Input 2: "The cat, Meow jumps over the wall."
+Output: {"The", "cat", "meow", "jumps", "over", "the", "wall"}
+Remarks: Method 2 will remove any punctuation.
+
+5.
+Input 1: "the"
 Input 2: "The cat jumps over the wall"
 Output: number of "the" instances: 2
 Remarks: Method 2 will count the number of instances the word appears and display the count.
