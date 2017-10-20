@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+<body>
+  <h1>Word Count:</h1>
+  <table style="width:100%">
+  <tr>
+    <th><h3><strong>Word Searched:</strong></h3></th>
+    <th><h3><strong>Sentence Input:</strong></h3></th>
+    <th><h3><strong>Number of Word Repeats:</strong></h3></th>
+  </tr>
+  <tr>
+    <td><h3>@Model["Word"]</h3></td>
+    <td>@Model["Sentence"]</td>
+    <td><h3>@Model["Repeats"]</h3></td>
+  </tr>
+</table>
+<br>
+  <a href="/">Check New Word</a>
+</body>
