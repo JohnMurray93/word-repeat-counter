@@ -10,8 +10,8 @@ namespace WordCounter.Models
 
     public RepeatCounter(string wordinput, string sentence)
     {
-      _wordinput = wordinput;
-      _sentence = sentence;
+      _wordinput = wordinput.ToLower();
+      _sentence = sentence.ToLower();
     }
 
     public string GetWord()
@@ -22,9 +22,9 @@ namespace WordCounter.Models
     {
       return _sentence;
     }
-    public bool IsSameWord(string newword)
+    public bool IsSameWord()
     {
-      if (newword == _wordinput)
+      if (_sentence == _wordinput)
       {
         return true;
       }
@@ -32,9 +32,9 @@ namespace WordCounter.Models
     }
     public string[] GetWordsArray()
     {
-      string sentence = _sentence.ToLower();
+      // string sentence = _sentence.ToLower();
       // char[] delimiterChars = {' ', ', ', '. ', ': ', '; ', '/t'};
-      string[] wordsArray = sentence.Split(' ');
+      string[] wordsArray = _sentence.Split(' ');
       return wordsArray;
     }
   }

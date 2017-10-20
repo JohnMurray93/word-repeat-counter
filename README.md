@@ -26,7 +26,7 @@ Remarks: Method 1 will recognise a word regardless of the case value. Program co
 Input 1: "the"
 Input 2: "The cat jumps over the wall"
 Output: {"The", "cat", "jumps", "over", "the", "wall"}
-Remarks: Method 2 will split strings into individual words.
+Remarks: Method 2 will split strings into individual words and removes any punctuation.
 
 4.
 Input 1: "the"
