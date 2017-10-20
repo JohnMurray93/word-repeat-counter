@@ -1,6 +1,5 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Word Counter}
+
+## Word Counter
 Program Counts the number of times a word appears in a string
 
 ## Installation
@@ -47,6 +46,3 @@ Remarks: Method 2 will count the number of instances the word appears and displa
 Daniel Cheng
 ## License
 Open Source
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
