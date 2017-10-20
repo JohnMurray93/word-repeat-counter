@@ -1,5 +1,5 @@
 body {
-  margin-left: 3%;
+  margin: 3%;
 }
 
 /*a {
@@ -9,4 +9,8 @@ body {
 
 #sentenceBox {
   height: 100px;
+}
+
+th {
+  margin: 5px;
 }
