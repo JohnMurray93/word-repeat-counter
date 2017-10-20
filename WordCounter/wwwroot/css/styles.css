@@ -1,0 +1,25 @@
+body {
+  margin: 3%;
+}
+
+/*a {
+  font-size: 20px;
+  text-decoration: underline;
+}*/
+
+#sentenceBox {
+  padding-top: 2px;
+  padding-left: 2px;
+  height:100px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: top;
+}
